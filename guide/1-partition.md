@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-betalm/blob/main/betalm.png" width="350" alt="Windows 11 running on betalm">
+<img align="right" src="https://github.com/n00b69/woa-flashlmdd/blob/main/flashlmdd.png" width="350" alt="Windows 11 running on flashlmdd">
 
-# Running Windows on the LG G8s
+# Running Windows on the LG V50
 
 ## Partitioning your device
 
