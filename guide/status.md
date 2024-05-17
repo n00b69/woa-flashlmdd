@@ -1,22 +1,22 @@
-<img align="right" src="https://github.com/n00b69/woa-betalm/blob/main/betalm.png" width="350" alt="Windows 11 running on betalm">
+<img align="right" src="https://github.com/n00b69/woa-flashlmdd/blob/main/flashlmdd.png" width="350" alt="Windows 11 running on flashlmdd">
 
-# Running Windows on the LG G8s
+# Running Windows on the LG V50
 
 ## Project status
-Alpha. Some things work, some don't. Current main objective is to get charging and audio working.
+Most things currently work.
 
 #### Features
-- [ ] Audio ```3.5mm only (for now)```
+- [ ] Audio ```3.5mm only```
 - [x] Battery percentage
 - [x] Bluetooth
 - [x] Brightness
 - [ ] Camera
-- [ ] Charging ```might get fixed```
+- [x] Charging
 - [x] Display
 - [ ] FM radio
-- [x] GPU ```minor issues```
+- [x] GPU
 - [ ] LTE 
-- [ ] SD ```might get fixed```
+- [ ] SD ```unknown```
 - [x] Touchscreen
 - [x] UFS
 - [x] USB
