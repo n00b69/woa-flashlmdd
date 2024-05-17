@@ -8,28 +8,20 @@
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
 - [Qfil](https://github.com/n00b69/woa-flashlmdd/releases/tag/Qfil)
+
+- [Parted script](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/parted)
   
-- [Modded TWRP](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/moddedv50.img)
+- Any custom recovery
   
 - Boot backups
 
-### Reboot to fastboot mode
-- Reboot your phone.
-- After it has booted, unplug the cable and power it off.
-- Once the device has turned off, hold the **volume down** button, then plug the cable back in.
-
-#### Boot into TWRP
-> Replace `path\to\moddedv50.img` with the actual path of the provided TWRP image
->
-> After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
-```cmd
-fastboot boot path\to\moddedv50.img
-```
+### Reboot to a modded recovery
+> Which should be accessible by holding the **volume up** + **power** buttons, or with the **Reboot to recovery** button in Magisk
 
 ### Running parted
-> Replug the cable if it says "no devices/emulators found"
+> Download the parted file and move it in the platform-tools folder, then run
 ```cmd
-adb shell parted /dev/block/sda
+adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
 ```
 
 #### Delete Windows Partition
@@ -74,16 +66,16 @@ adb reboot
 - Open **Qfil**.
 - In "Select Build Type", select **flat build**.
 - In "Select programmer", select the downloaded firehose.
-- In Configuration, make sure the "Device Type" is set to **UFS**.
+- In "Configuration", make sure the "Device Type" is set to **UFS**.
 
-#### Flashing engineering ABL
+#### Flashing stock boot images
 - In **Qfil**, select Tools > Partition manager, and click **Ok**.
 - Right click on **boot_a** > **Manage Partition Data** and press **Load Image**.
-- Select and flash the **boot_a** backup you made earlier when installing Windows (which should be in `C:\users\name\AppData\roaming\qualcomm\qfil\comportno\`)
+- Select and flash the **boot_a** backup you made earlier when installing Windows (which should be in `C:\Users\YOURNAME\AppData\Roaming\Qualcomm\QFIL\COMPORT_#\`)
 - Do the same thing for **boot_b**.
 
 ### Reboot your phone
-- Hold **volume down** + **power** until it shows the LG G8s logo, then release the buttons.
+- Hold **volume down** + **power** until it shows the LG logo, then release the buttons.
 
 ## Finished!
 
