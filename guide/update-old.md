@@ -2,7 +2,7 @@
 
 # Running Windows on the LG V50
 
-## Updating drivers
+## Updating drivers (old method)
 
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
