@@ -7,14 +7,14 @@
 ### Prerequisites
 - [Windows on ARM image](https://worproject.com/esd)
   
-- [Drivers](https://github.com/n00b69/woa-betalm/releases/tag/Drivers)
+- [Drivers](https://github.com/n00b69/woa-flashlmdd/releases/tag/Drivers)
 
-- [UEFI image](https://github.com/n00b69/woa-betalm/releases/tag/UEFI)
+- [UEFI image](https://github.com/n00b69/woa-flashlmdd/releases/tag/UEFI)
 
 ### Boot to the UEFI
-> Replace **<path\to\betalm-uefi.img>** with the actual path of the UEFI image
+> Replace **<path\to\flashlmdd-uefi.img>** with the actual path of the UEFI image
 ```cmd
-fastboot boot <path\to\betalm-uefi.img>
+fastboot boot <path\to\flashlmdd-uefi.img>
 ```
 
 #### Enabling mass storage mode
@@ -25,7 +25,7 @@ fastboot boot <path\to\betalm-uefi.img>
 
 ### Diskpart
 > [!WARNING]
-> DO NOT ERASE, CREATE OR OTHERWISE MODIFY ANY PARTITION WHILE IN DISKPART!!!! THIS CAN ERASE ALL OF YOUR UFS OR PREVENT YOU FROM BOOTING TO FASTBOOT!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for taking the device to LG or flashing it with EDL, both of which will likely cost money)
+> DO NOT ERASE, CREATE OR OTHERWISE MODIFY ANY PARTITION WHILE IN DISKPART!!!! THIS CAN ERASE ALL OF YOUR UFS OR PREVENT YOU FROM BOOTING TO FASTBOOT!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for flashing it with EDL, which is complicated)
 ```cmd
 diskpart
 ```
@@ -58,7 +58,7 @@ sel par $
 
 #### Formatting Windows drive
 ```cmd
-format quick fs=ntfs label="WINBETALM"
+format quick fs=ntfs label="WINFLASH"
 ```
 
 #### Add letter to Windows
@@ -74,7 +74,7 @@ sel par $
 
 #### Formatting ESP drive
 ```cmd
-format quick fs=fat32 label="ESPBETALM"
+format quick fs=fat32 label="ESPFLASH"
 ```
 
 #### Add letter to ESP
@@ -99,7 +99,7 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 ### Installing drivers
 > Unpack the driver archive, then open the `OfflineUpdater.cmd` file
 
-> Enter the drive letter of `WINBETALM`, which should be **X**, then press enter
+> Enter the drive letter of `WINFLASH`, which should be **X**, then press enter
   
 #### Create the Windows bootloader files
 ```cmd
