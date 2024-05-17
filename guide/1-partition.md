@@ -7,11 +7,11 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Qfil](https://github.com/n00b69/woa-betalm/releases/tag/Qfil)
+- [Qfil](https://github.com/n00b69/woa-flashlmdd/releases/tag/Qfil)
 
-- [Engineering ABL](https://github.com/n00b69/woa-betalm/releases/download/Files/engabl_ab.bin)
+- [Engineering ABL](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/engabl_ab.bin)
   
-- [Modded TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/moddedg8s.img)
+- [Modded TWRP](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/moddedv50.img)
 
 ### Notes
 > [!WARNING]  
@@ -62,11 +62,11 @@
 - If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
 
 #### Boot into TWRP
-> Replace `path\to\moddedg8s.img` with the actual path of the provided TWRP image
+> Replace `path\to\moddedv50.img` with the actual path of the provided TWRP image
 >
 > After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
 ```cmd
-fastboot boot path\to\moddedg8s.img
+fastboot boot path\to\moddedv50.img
 ```
 
 ### Preparing for partitioning
