@@ -7,9 +7,9 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Qfil](https://github.com/n00b69/woa-betalm/releases/tag/Qfil)
+- [Qfil](https://github.com/n00b69/woa-flashlmdd/releases/tag/Qfil)
   
-- [Modded TWRP](https://github.com/n00b69/woa-betalm/releases/download/Files/moddedg8s.img)
+- [Modded TWRP](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/moddedv50.img)
   
 - Boot backups
 
@@ -19,11 +19,11 @@
 - Once the device has turned off, hold the **volume down** button, then plug the cable back in.
 
 #### Boot into TWRP
-> Replace `path\to\moddedg8s.img` with the actual path of the provided TWRP image
+> Replace `path\to\moddedv50.img` with the actual path of the provided TWRP image
 >
 > After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
 ```cmd
-fastboot boot path\to\moddedg8s.img
+fastboot boot path\to\moddedv50.img
 ```
 
 ### Running parted
