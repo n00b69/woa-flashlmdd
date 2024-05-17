@@ -9,12 +9,16 @@
   
 - [Drivers](https://github.com/n00b69/woa-flashlmdd/releases/tag/Drivers)
 
-- [UEFI image](https://github.com/n00b69/woa-flashlmdd/releases/tag/UEFI)
+- [Mass storage image](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/msc.img)
 
-### Boot to the UEFI
-> Replace **<path\to\flashlmdd-uefi.img>** with the actual path of the UEFI image
+### Reboot to fastboot mode
+- With the device turned off, hold the **volume down** button, then plug the cable in.
+- If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
+
+#### Boot to the mass storage mode UEFI
+> Replace **<path\to\msc.img>** with the actual path of the image
 ```cmd
-fastboot boot <path\to\flashlmdd-uefi.img>
+fastboot boot <path\to\msc.img>
 ```
 
 #### Enabling mass storage mode
@@ -122,7 +126,7 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
 ### Reboot to EDL
-> If you didn't flash the engineering ABL on the previous page, you can skip this step and simply reboot your device
+> To flash the stock ABL
 - Open **Device Manager** on your PC
 - Hold **volume down** + **power**.
 - After the screen turns dark, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
