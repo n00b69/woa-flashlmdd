@@ -16,7 +16,7 @@ This project is in an early stage, all the files here have been contributed by o
 ## Get started
 - [Project status](guide/status.md)
 
-- ~~[Installation instructions](guide/1-partition.md)~~
+- [Installation instructions](guide/1-partition.md)
 
 - [Troubleshooting](guide/troubleshooting.md)
 
@@ -27,7 +27,7 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Update drivers](guide/update.md)
 
-- ~~[Reinstall instructions](guide/reinstall.md)~~
+- [Reinstall instructions](guide/reinstall.md)
 
 - [Uninstall instructions](guide/uninstall.md)
 
