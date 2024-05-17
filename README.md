@@ -3,7 +3,7 @@
 
 <img align="right" src="https://github.com/n00b69/woa-flashlmdd/blob/main/flashlmdd.png" width="350" alt="Windows 11 running on flashlmdd">
 
-# Running Windows on the LG V50 / V50S
+# Running Windows on the LG V50
 [![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/winong8x)
 
 ## ⚠️ Warning
