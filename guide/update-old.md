@@ -12,9 +12,9 @@
 - [UEFI image](https://github.com/n00b69/woa-betalm/releases/tag/UEFI)
 
 ### Boot to the UEFI
-> Replace **<path\to\betalm-msc.img>** with the actual path of the UEFI image
+> Replace **<path\to\msc.img>** with the actual path of the UEFI image
 ```cmd
-fastboot boot <path\to\betalm-msc.img>
+fastboot boot <path\to\msc.img>
 ```
 
 #### Enabling mass storage mode
@@ -29,7 +29,7 @@ diskpart
 ```
 
 #### Select the phone's Windows volume
-> Use `list volume` to find it, it should be named **WINBETALM**
+> Use `list volume` to find it, it should be named **WINFLASH**
 ```diskpart
 select volume <number>
 ```
@@ -47,7 +47,7 @@ exit
 ### Installing Drivers
 > Unpack the driver archive, then open the `OfflineUpdater.cmd` file
 
-> Enter the drive letter of `WINBETALM`, which should be X, then press enter
+> Enter the drive letter of `WINFLASH`, which should be X, then press enter
 
 #### Reboot your device
 > Once the drivers have finished installing
