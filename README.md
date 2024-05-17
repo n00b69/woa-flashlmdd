@@ -13,13 +13,10 @@ This project is in an early stage, all the files here have been contributed by o
 
 **IF YOU AREN'T COMFORTABLE MODDING YOUR PHONE OR ITS PARTITION TABLE OR YOU ARE PARANOID OF BRICKING YOUR DEVICE CLICK AWAY NOW!!! YOU HAVE BEEN WARNED, YOU ARE ON YOUR OWN IF YOU BRICK YOUR DEVICE!!! AGAIN! YOU HAVE BEEN WARNED!!!**
 
-> [!Important]
-> This guide is for the LG G8s. Click the links here if you are looking for the [LG G8x](https://github.com/Icesito68/Port-Windows-11-Lg-G8x) or the [LG G8](https://github.com/n00b69/woa-alphaplus) guides.
-
 ## Get started
 - [Project status](guide/status.md)
 
-- [Installation instructions](guide/1-partition.md)
+- ~~[Installation instructions](guide/1-partition.md)~~
 
 - [Troubleshooting](guide/troubleshooting.md)
 
@@ -30,7 +27,7 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Update drivers](guide/update.md)
 
-- [Reinstall instructions](guide/reinstall.md)
+- ~~[Reinstall instructions](guide/reinstall.md)~~
 
 - [Uninstall instructions](guide/uninstall.md)
 
