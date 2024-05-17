@@ -140,7 +140,7 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 - Do the same thing for **abl_b**.
 
 #### Reboot back to Android
-Simply reboot your device
+- Hold **volume down** + **power** until it shows the LG logo, then release the buttons.
 
 ## [Last step: let's setup dualboot](dualboot.md)
 
