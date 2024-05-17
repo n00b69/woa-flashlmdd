@@ -9,9 +9,11 @@
 
 - [Qfil](https://github.com/n00b69/woa-flashlmdd/releases/tag/Qfil)
 
+- [Parted script](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/parted)
+
 - [Engineering ABL](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/engabl_ab.bin)
   
-- [Modded TWRP](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/moddedv50.img)
+- Any custom recovery
 
 ### Notes
 > [!WARNING]  
@@ -38,7 +40,7 @@
 - Open **Qfil**.
 - In "Select Build Type", select **flat build**.
 - In "Select programmer", select the downloaded firehose.
-- In Configuration, make sure the "Device Type" is set to **UFS**.
+- In "Configuration", make sure the "Device Type" is set to **UFS**.
 
 #### Backing up your partitions
 - In **Qfil**, select Tools > Partition manager, and click **Ok**.
@@ -49,30 +51,25 @@
 > Navigate to `C:\Users\YOURNAME\AppData\Roaming\Qualcomm\QFIL\COMPORT_#\` and rename the backed up partitions one by one as you back them up. Qfil does not name the backups, and if you don't rename them, it'll be impossible to figure out which files are which. You can restore them later with the **Load Image** function.
 
 ### Flashing engineering ABL
-> If fastboot works on your phone, you can skip this step
+> Or fastboot won't work
 - In **Qfil**, select Tools > Partition manager, and click **Ok**.
 - Right click on **abl_a** > **Manage Partition Data** and press **Load Image**.
 - Select and flash the **engabl_ab.bin** file.
 - Do the same thing for **abl_b**.
 
-#### Reboot to fastboot mode
-- Reboot your phone.
-- After it has booted, unplug the cable and power it off.
-- Once the device has turned off, hold the **volume down** button, then plug the cable back in.
-- If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
+#### Reboot your phone
+> Hold **volume down** + **power** until it shows the LG logo, then release the buttons.
 
-#### Boot into TWRP
-> Replace `path\to\moddedv50.img` with the actual path of the provided TWRP image
->
-> After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
-```cmd
-fastboot boot path\to\moddedv50.img
-```
+#### Reboot to any custom recovery
+> Such as Lineage recovery, OFOX, or TWRP, which should be accessible by holding the **volume up** + **power** buttons, or with the Reboot to recovery button in Magisk
+
+#### Unmount all partitions
+Go to mount in your recovery and unmount all partitions
 
 ### Preparing for partitioning
-> Replug the cable if it says "no devices/emulators found"
+> Download the parted file and move it in the platform-tools folder, then run
 ```cmd
-adb shell parted /dev/block/sda
+adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
 ```
 
 #### Printing the current partition table
@@ -124,9 +121,13 @@ set $ esp on
 quit
 ```
 
-### Reboot your phone
-> Once it is booted, it will tell you decryption was unsuccesful and it will ask you to erase all data.
+### Format all data
+Go to the Wipe menu in your recovery and wipe all data. If this doesn't work, simply reboot your phone.
+
+#### Check if Android still starts
+> Once it is booted, it should tell you decryption was unsuccesful and it will ask you to erase all data.
 - Press this button to erase all data, let the phone boot back up, then reboot back to fastboot mode.
+Just reboot the phone and see if Android still boots.
 
 ## [Next step: Installing Windows](2-install.md)
 
