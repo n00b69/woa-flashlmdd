@@ -6,7 +6,7 @@
 Most things currently work.
 
 #### Features
-- [ ] Audio ```3.5mm only```
+- [x] Audio
 - [x] Battery percentage
 - [x] Bluetooth
 - [x] Brightness
