@@ -3,7 +3,7 @@
 # Running Windows on the LG V50
 
 ## Project status
-Most things currently work.
+There are currently issues with restarting/shutting down the device while in Windows, requiring you to force reboot using the power + volume down button. This will hopefully be fixed soon.
 
 #### Features
 - [x] Audio
