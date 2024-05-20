@@ -1,6 +1,3 @@
-> [!Warning]
-> This guide is W.I.P. DO NOT USE YET!
-
 <img align="right" src="https://github.com/n00b69/woa-flashlmdd/blob/main/flashlmdd.png" width="350" alt="Windows 11 running on flashlmdd">
 
 # Running Windows on the LG V50
