@@ -104,6 +104,9 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 > Unpack the driver archive, then open the `OfflineUpdater.cmd` file
 
 > Enter the drive letter of `WINFLASH`, which should be **X**, then press enter
+
+> [!important]
+> After you finish installing the drivers, copy the drivers archive into the root of **WINFLASH** with Windows Explorer. After you boot into Windows for the first time, extract it, then open the **OnlineUpdater.cmd** file to update to the correct drivers.
   
 #### Create the Windows bootloader files
 ```cmd
