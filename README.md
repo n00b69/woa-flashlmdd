@@ -11,7 +11,7 @@ This project is in an early stage, all the files here have been contributed by o
 **IF YOU AREN'T COMFORTABLE MODDING YOUR PHONE OR ITS PARTITION TABLE OR YOU ARE PARANOID OF BRICKING YOUR DEVICE CLICK AWAY NOW!!! YOU HAVE BEEN WARNED, YOU ARE ON YOUR OWN IF YOU BRICK YOUR DEVICE!!! AGAIN! YOU HAVE BEEN WARNED!!!**
 
 > [!Important]
-> This guide is for the LG V50. If you are looking to install Windows on the LG V50S, use [this guide](github.com/n00b69/woa-mh2lm5g) instead.
+> This guide is for the LG V50. If you are looking to install Windows on the LG V50S, use [this guide](https://github.com/n00b69/woa-mh2lm5g) instead.
 
 ## Get started
 - [Project status](guide/status.md)
