@@ -131,8 +131,8 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ### Reboot to EDL
 > To flash the stock ABL
 - Open **Device Manager** on your PC
-- Hold **volume down** + **power**.
-- After the screen turns dark, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
+- With the phone turned off, hold **volume down** + **power**.
+- After the LG logo appears, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
 - Keep doing this until you see **QDLoader 9008** or **QUSB_BULK** in the Device Manager on your PC.
 
 #### Flashing stock ABL
