@@ -32,7 +32,7 @@
 #### Boot to EDL
 - Open **Device Manager** on your PC
 - With the phone turned off, hold **volume down** + **power**.
-- After the screen turns dark, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
+- After the LG logo appears, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
 - Keep doing this until you see **QDLoader 9008** or **QUSB_BULK** in the Device Manager on your PC.
 - If the device has a ⚠️ yellow warning triangle, you need to install EDL drivers before you can continue to the next step.
 
