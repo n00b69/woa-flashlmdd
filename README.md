@@ -1,7 +1,7 @@
 <img align="right" src="https://github.com/n00b69/woa-flashlmdd/blob/main/flashlmdd.png" width="350" alt="Windows 11 running on flashlmdd">
 
 # Running Windows on the LG V50
-[![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/winong8x)
+[![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/lgedevices)
 
 ## ⚠️ Warning
 We are not responsible for bricked devices, deleted recovery partitions, dead xiaomi workers (LG ones are ok, don't worry), dead microSD cards, dead pmics, dead ram, dead ics, dead cpus, any xiaomi/poco mischief (LG never does anything), dead cats or dogs, nuclear wars or getting fired because you forgot to reboot to android for the alarm.
