@@ -17,8 +17,6 @@
 
 ### Notes
 > [!WARNING]  
-> 
-> Do not run the same command twice unless specified.
 >  
 > Do not run all commands at once, execute them in order!
 >
@@ -29,29 +27,35 @@
 ### Backing up partitions
 > If you don't do this and mess something up, you're on your own
 
-#### Boot to EDL
-- Open **Device Manager** on your PC
-- With the phone turned off, hold **volume down** + **power**.
-- After the LG logo appears, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
-- Keep doing this until you see **QDLoader 9008** or **QUSB_BULK** in the Device Manager on your PC.
-- If the device has a ⚠️ yellow warning triangle, you need to install EDL drivers before you can continue to the next step.
-
 #### Setting up Qfil
 - Open **Qfil**.
 - In "Select Build Type", select **flat build**.
 - In "Select programmer", select the downloaded firehose.
 - In "Configuration", make sure the "Device Type" is set to **UFS**.
 
+#### Boot to EDL
+- Open **Device Manager** on your PC
+- With the phone turned off, hold **volume down** + **power**.
+- After the LG logo appears, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
+- Keep doing this until you hear a USB connection sound on your PC, or when **QDLoader 9008** or **QUSB_BULK** appears in the Device Manager on your PC (it should be in the **Ports (COM & LPT)** category).
+- If the device has a ⚠️ yellow warning triangle, you need to install EDL drivers before you can continue to the next step.
+
+#### Making sure Qfil works
+- In **Qfil**, select "Tools" > "Partition manager", and click **Ok**.
+- If you see a **Download Fail:Sahara Fail** error, make sure your cable stays connected and reboot to EDL again by holding **volume down** + **power**, then start rapidly pressing the **volume up** button once the LG logo appears.
+- Once you're back in EDL, try opening the Partition manager again.
+- If it still fails, try to repeat the last step a few times. You can also try rebooting your phone and PC.
+
 #### Backing up your partitions
-- In **Qfil**, select Tools > Partition manager, and click **Ok**.
-- Right click on **laf_a** > **Manage Partition Data** and press **Read Data**.
-- Do the same thing for **laf_b**, **boot_a**, **boot_b**, **abl_a**, **abl_b**, **aop_a**, **aop_b**, **xbl_a**, **xbl_b**, **fsg**, **fsc**, **modemst1**, **modemst2**, **modem_a**, **modem_b**
+- In the Partition manager, right click on **laf_a** > **Manage Partition Data** and press **Read Data**.
+- Do the same thing for **boot_a**, **abl_a**, **aop_a**, **xbl_a**, **fsg**, **fsc**, **modemst1**, **modemst2** and **modem_a**
+- If you want to be on the safe side, you can also use [QFILHelper](https://github.com/Beliathal/QFILHelper) to back up every partition. In this guide we only back up the most critical partitions.
 
 > [!Important]
 > Navigate to `C:\Users\YOURNAME\AppData\Roaming\Qualcomm\QFIL\COMPORT_#\` and rename the backed up partitions one by one as you back them up. Qfil does not name the backups, and if you don't rename them, it'll be impossible to figure out which files are which. You can restore them later with the **Load Image** function.
 
 ### Flashing engineering ABL
-> Or fastboot won't work
+> If fastboot works on your phone, you can skip this step
 - In **Qfil**, select Tools > Partition manager, and click **Ok**.
 - Right click on **abl_a** > **Manage Partition Data** and press **Load Image**.
 - Select and flash the **engabl_ab.bin** file.
