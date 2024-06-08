@@ -19,7 +19,7 @@ There are currently issues with restarting/shutting down the device while in Win
 - [ ] SD ```unknown```
 - [x] Touchscreen
 - [x] UFS
-- [x] USB
+- [x] USB ```sometimes doesn't work after charging```
 - [x] WiFi
 - [ ] Wireless charging ```unknown```
 
