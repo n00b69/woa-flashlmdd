@@ -17,9 +17,9 @@
 - If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
 
 #### Boot to the mass storage mode UEFI
-> Replace **<path\to\msc.img>** with the actual path of the image
+> Replace `path\to\msc.img` with the actual path of the image
 ```cmd
-fastboot boot <path\to\msc.img>
+fastboot boot path\to\msc.img
 ```
 
 #### Enabling mass storage mode
@@ -73,18 +73,18 @@ exit
 > Go to Windows Explorer > This PC and select **WINFLASH**. Right click and format as NTFS.
 
 ### Installing Windows
-> Replace `<path\to\install.esd>` with the actual path of install.esd (it may also be named install.wim)
+> Replace `path\to\install.esd` with the actual path of install.esd (it may also be named install.wim)
 
 ```cmd
-dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
+dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
 ```
 
-> If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, then replace `index:6` with the actual index number of Windows 11 Pro in your image
+> If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:path\to\install.esd`, then replace `index:6` with the actual index number of **Windows 11 Pro** in your image
 
 ### Installing Drivers
-> Unpack the driver archive, then open the `OfflineUpdater.cmd` file
+> Unpack the driver archive, then open the `OfflineUpdater.cmd` file (if an error shows up, run `OfflineUpdaterFix.cmd` instead)
 
-> Enter the drive letter of **WINFLASH**, which should be X, then press enter
+> If it asks you to enter a letter, enter the drive letter of **WINFLASH** (which should be **X**), then press enter
 
 ### Boot into Windows
 Reboot your phone. If you end up in Android instead of Windows, flash the UEFI again using WOA Helper.
