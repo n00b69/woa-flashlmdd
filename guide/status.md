@@ -11,17 +11,16 @@ There are currently issues with restarting/shutting down the device while in Win
 - [x] Bluetooth
 - [x] Brightness
 - [ ] Camera
-- [x] Charging
+- [x] Charging (USB) ```VERY slow```
+- [ ] Charging (Wireless) ```unknown```
 - [x] Display
-- [ ] FM radio
 - [x] GPU
-- [ ] LTE 
+- [ ] LTE/SMS
 - [ ] SD ```unknown```
 - [x] Touchscreen
 - [x] UFS
-- [x] USB ```sometimes doesn't work after charging```
+- [x] USB ```doesn't work after charging```
 - [x] WiFi
-- [ ] Wireless charging ```unknown```
 
 #### Sensors
 - [ ] Accelerometer
