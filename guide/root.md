@@ -22,7 +22,7 @@
 ### Flashing Magisk
 - Select **Apply update** > **Apply from ADB**.
 - Download **magisk.apk** and rename it to **magisk.zip**
-- Use the adb sideload command to install Magisk. Replace **path\to\magisk.zip** with the actual path of magisk.zip.
+- Use the adb sideload command to install Magisk. Replace `path\to\magisk.zip` with the actual path of magisk.zip.
 ```cmd
 adb sideload path\to\magisk.zip
 ```
