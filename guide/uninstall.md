@@ -7,21 +7,20 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Qfil](https://github.com/n00b69/woa-flashlmdd/releases/tag/Qfil)
-
 - [Parted script](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/parted)
   
 - Any custom recovery
-  
-- Boot backups
 
-### Reboot to a modded recovery
-> Which should be accessible by holding the **volume up** + **power** buttons, or with the **Reboot to recovery** button in Magisk
+### Boot TWRP on the device
+> Boot into any custom recovery, such as TWRP
 
-### Running parted
-> Download the parted file and move it in the platform-tools folder, then run
+#### Unmount all partitions
+> Go to mount in TWRP and unmount all partitions
+
+### Run parted
+> Put parted in your platform tools folder, then run
 ```cmd
-adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
+adb push parted /cache && chmod 755 /cache/parted && /parted /dev/block/sda
 ```
 
 #### Delete Windows Partition
@@ -48,50 +47,13 @@ resizepart 30
 quit
 ```
 
-### Reboot your phone
-```cmd
-adb reboot
-```
-> [!note]
-> If your last boot was in Windows, you may find yourself booting the UEFI instead of Android. If this is the case, you'll need to do the additional steps below.
+### Format data
+Go to the Wipe menu in TWRP and press Format Data, then type `yes`
 
-### Boot to EDL
-- Open **Device Manager** on your PC
-- With the phone turned off, hold **volume down** + **power**.
-- After the LG logo appears, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
-- Keep doing this until you see **QDLoader 9008** or **QUSB_BULK** in the Device Manager on your PC.
-- If the device has a ⚠️ yellow warning triangle, you need to install EDL drivers before you can continue to the next step.
-
-#### Setting up Qfil
-- Open **Qfil**.
-- In "Select Build Type", select **flat build**.
-- In "Select programmer", select the downloaded firehose.
-- In "Configuration", make sure the "Device Type" is set to **UFS**.
-
-#### Flashing stock boot images
-- In **Qfil**, select Tools > Partition manager, and click **Ok**.
-- Right click on **boot_a** > **Manage Partition Data** and press **Load Image**.
-- Select and flash the **boot_a** backup you made earlier when installing Windows (which should be in `C:\Users\YOURNAME\AppData\Roaming\Qualcomm\QFIL\COMPORT_#\`)
-- Do the same thing for **boot_b**.
-
-### Reboot your phone
-- Hold **volume down** + **power** until it shows the LG logo, then release the buttons.
+#### Check if Android boots
+Reboot your device and check if Android boots.
 
 ## Finished!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
