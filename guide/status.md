@@ -17,7 +17,7 @@ There are currently issues with restarting/shutting down the device while in Win
 - [x] Display
 - [x] GPU
 - [ ] LTE/SMS
-- [ ] SD ```unknown```
+- [ ] SD Card ```unknown```
 - [x] Touchscreen
 - [x] UFS
 - [x] USB ```doesn't work after charging```
