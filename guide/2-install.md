@@ -130,6 +130,26 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
+### Boot into any custom recovery
+> Reboot your phone by holding **volume down** + **power** until it shows the LG logo, then release the buttons. After this boot to any custom recovery again.
+
+#### Push parted
+> Make sure your CMD is opened in platform-tools
+```cmd
+adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
+```
+
+#### Making ESP bootable
+> Use `print` to see all partitions. Replace "$" with your ESP partition number, which should be 31
+```cmd
+set $ esp on
+```
+
+#### Exit parted
+```cmd
+quit
+```
+
 ### Reboot to EDL
 > If you didn't flash the engineering ABL on the previous page, you can skip this step and the next one and simply reboot your device
 - Open **Device Manager** on your PC
