@@ -9,7 +9,7 @@
   
 - [Drivers](https://github.com/n00b69/woa-flashlmdd/releases/tag/Drivers)
 
-- [Mass storage image](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/massstorage.img)
+- [Mass storage image](https://github.com/n00b69/woa-mh2lm5g/releases/download/Files/massstorage.img)
 
 - [Qfil](https://github.com/n00b69/woa-flashlmdd/releases/tag/Qfil)
 
