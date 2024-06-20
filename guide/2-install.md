@@ -9,7 +9,7 @@
   
 - [Drivers](https://github.com/n00b69/woa-flashlmdd/releases/tag/Drivers)
 
-- [Mass storage image](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/msc.img)
+- [Mass storage image](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/massstorage.img)
 
 - [Qfil](https://github.com/n00b69/woa-flashlmdd/releases/tag/Qfil)
 
@@ -19,16 +19,12 @@
 - To install fastboot drivers, extract the contents of **QUD.zip** somewhere, right click on **Android**, click on **Update driver** and **Browse my computer for drivers**, then find and select the **QUD** folder.
 
 #### Boot to the mass storage mode image
-> Replace `path\to\msc.img` with the actual path of the image
+> Replace `path\to\massstorage.img` with the actual path of the image
+>
+> If popups show up telling you to format the disks, ignore or close them
 ```cmd
-fastboot boot path\to\msc.img
+fastboot boot path\to\massstorage.img
 ```
-
-#### Enabling mass storage mode
-> Once booted into the UEFI, use the volume buttons to navigate the menu and the power button to confirm
-- Select **UEFI Boot Menu**.
-- Select **USB Attached SCSI (UAS) Storage**.
-- Press the **power** button twice to confirm.
 
 ### Diskpart
 > [!WARNING]
@@ -46,7 +42,7 @@ lis dis
 ```
 
 #### Selecting your phone
-> Replace $ with the actual number of your phone
+> Replace `$` with the actual number of your phone
 ```cmd
 sel dis $
 ```
@@ -58,7 +54,7 @@ lis par
 ```
 
 #### Selecting the Windows partition
-> Replace $ with the partition number of Windows (should be 32)
+> Replace `$` with the partition number of Windows (should be 32)
 ```cmd
 sel par $
 ```
@@ -74,7 +70,7 @@ assign letter x
 ```
 
 #### Selecting the ESP partition
-> Replace $ with the partition number of ESP (should be 31)
+> Replace `$` with the partition number of ESP (should be 31)
 ```cmd
 sel par $
 ```
