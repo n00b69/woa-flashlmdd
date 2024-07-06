@@ -27,7 +27,7 @@ There are currently issues with restarting/shutting down the device while in Win
 - [ ] Accelerometer
 - [ ] Fingerprint
 - [x] GPS
-- [x] Gyroscope
+- [ ] Gyroscope
 - [ ] Light sensor
 - [ ] Magnetometer
 - [ ] Proximity
