@@ -108,7 +108,7 @@ dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
 > If it asks you to enter a letter, enter the drive letter of **WINFLASH** (which should be **X**), then press enter
 
 > [!important]
-> After you finish installing the drivers, copy the drivers archive into the root of **WINFLASH** with Windows Explorer. After you boot into Windows for the first time, extract it, then open the **OnlineUpdater.cmd** file to update to the correct drivers.
+> After booting into Windows later in the guide, reboot back into mass storage mode and open **OfflineUpdater.cmd** again to reinstall drivers. GPU drivers do not get installed properly otherwise.
   
 #### Create the Windows bootloader files
 ```cmd
