@@ -18,18 +18,6 @@ Run [USB Host Control](https://github.com/Misha803/My-Scripts/releases/tag/USB-H
 
 ##### Finished!
 
-## Hide D drive (modem partition)
-> [!NOTE]
-> This is recommended because this drive should not be modified, while some applications may try to write to it
-
-- Open a command prompt window and run ```diskpart```
-- Run ```list volume``` to see all available volumes
-- Select the disk that has letter D with ```select volume $```, replacing "$" with the volume number
-- Remove the letter with ```remove letter d```
-- Exit diskpart with ```exit```
-
-##### Finished!
-
 ## Install Microsoft Office / Microsoft 365
 - Download this [ISO file](https://mega.nz/file/hjAiSL4T#G7kOKpsUFpyL2UW9RQmY2e96urcQW5xZKdc7ciaNOy8) to the tablet
 - Right-click on the iso file and select Mount to open it in explorer
