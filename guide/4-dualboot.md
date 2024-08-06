@@ -5,7 +5,7 @@
 ## Dualbooting Android and Windows seamlessly
 
 ### Prerequisites
-- [UEFI image](https://github.com/n00b69/woa-betalm/releases/tag/UEFI)
+- [UEFI image](https://github.com/n00b69/woa-flashlmdd/releases/tag/UEFI)
   
 - [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
 
