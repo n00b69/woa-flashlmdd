@@ -61,8 +61,8 @@ cd path\to\platform-tools
 - If it still fails, try to repeat the last step a few times. You can also try rebooting your phone and PC.
 
 #### Backing up your partitions
-- In the Partition manager, right click on **laf_a** > **Manage Partition Data** and press **Read Data**.
-- Do the same thing for **boot_a**, **abl_a**, **aop_a**, **xbl_a**, **fsg**, **fsc**, **modemst1**, **modemst2** and **modem_a**
+- In the Partition manager, right click on **abl_a** > **Manage Partition Data** and press **Read Data**.
+- Do the same thing for **fsg**, **fsc**, **modemst1**, **modemst2** and **modem_a**
 - If you want to be on the safe side, you can also use [QFILHelper](https://github.com/Beliathal/QFILHelper) to additionally back up every partition. In this guide we only back up the most critical partitions.
 
 > [!Important]
@@ -80,6 +80,12 @@ cd path\to\platform-tools
 
 #### Boot into any custom recovery
 > Such as Lineage recovery, OFOX, or TWRP, which should be accessible by holding the **volume up** + **power** buttons, or with the Reboot to recovery button in Magisk
+
+### Backing up your boot image
+> This will back up your current boot image in the current directory
+```cmd
+adb pull /dev/block/by-name/boot_a boot.img
+```
 
 #### Unmount all partitions
 Go to mount in your recovery and unmount all partitions
@@ -142,12 +148,11 @@ quit
 ### Format all data
 Go to the Wipe menu in your recovery and wipe all data. If this doesn't work, simply reboot your phone.
 
-#### Check if Android still starts
-> Once it is booted, it should tell you decryption was unsuccesful and it will ask you to erase all data.
-- Press this button to erase all data, let the phone boot back up, then reboot back to fastboot mode.
-Just reboot the phone and see if Android still boots.
+### Reboot your phone
+> Once it is booted, it will tell you decryption was unsuccesful and it will ask you to erase all data.
+- Press this button to erase all data, then set up your phone (make sure to also enable USB debugging in developer settings).
 
-## [Next step: Installing Windows](2-install.md)
+## [Next step: Rooting your phone](2-root.md)
 
 
 
