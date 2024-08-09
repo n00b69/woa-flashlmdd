@@ -48,7 +48,7 @@ fastboot reboot
 ### Copying the rooted boot image
 > After your device has booted
 ```cmd
-adb pull /dev/block/by-name/boot root.img
+adb shell "su -c cp dev/block/by-name/boot_a /sdcard/root.img"; adb pull /sdcard/root.img
 ```
 
 ## [Next step: Installing Windows](3-install.md)
