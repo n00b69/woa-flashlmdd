@@ -13,7 +13,7 @@
   
 - [Drivers](https://github.com/n00b69/woa-flashlmdd/releases/tag/Drivers)
 
-- [Mass storage image](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/msc.img)
+- [Mass storage image](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/massstorage.img)
 
 ### Boot to EDL
 - Open **Device Manager** on your PC
@@ -40,17 +40,16 @@
 - With the device turned off, hold the **volume down** button, then plug the cable in.
 - If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
 
-#### Boot to the mass storage mode UEFI
-> Replace **<path\to\msc.img>** with the actual path of the image
+#### Boot to the mass storage mode image
+> Replace `path\to\massstorage.img` with the actual path of the image
+>
+> If popups show up telling you to format the disks, ignore or close them
 ```cmd
-fastboot boot <path\to\msc.img>
+fastboot boot path\to\massstorage.img
 ```
 
-#### Enabling mass storage mode
-> Once booted into the UEFI, use the volume buttons to navigate the menu and the power button to confirm
-- Select **UEFI Boot Menu**.
-- Select **USB Attached SCSI (UAS) Storage**.
-- Press the **power** button twice to confirm.
+> [!Note]
+> After 1-2 minutes **WINMH2LM5G** should automatically appear in Windows Explorer. If it does, skip to the "Installing drivers" step, else continue with the "Diskpart" steps.
 
 ### Diskpart
 ```cmd
