@@ -145,6 +145,16 @@ set $ msftdata on
 quit
 ```
 
+#### Formatting Windows drive
+```cmd
+adb shell mkfs.ntfs -f /dev/block/by-name/win -n WINFLASH
+```
+
+#### Formatting ESP drive
+```cmd
+adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPFLASH
+```
+
 ### Format all data
 Go to the Wipe menu in your recovery and wipe all data. If this doesn't work, simply reboot your phone.
 
