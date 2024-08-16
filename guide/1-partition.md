@@ -145,12 +145,12 @@ set $ msftdata on
 quit
 ```
 
-#### Formatting Windows drive
+### Formatting Windows drive
 ```cmd
 adb shell mkfs.ntfs -f /dev/block/by-name/win -n WINFLASH
 ```
 
-#### Formatting ESP drive
+### Formatting ESP drive
 ```cmd
 adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPFLASH
 ```
