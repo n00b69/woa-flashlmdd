@@ -156,7 +156,7 @@ adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPFLASH
 ```
 
 ### Format all data
-Go to the Wipe menu in your recovery and wipe all data. If this doesn't work, simply reboot your phone.
+- Go to the Wipe menu in your recovery and wipe all data. If this doesn't work, simply reboot your phone.
 
 ### Reboot your phone
 > Once it is booted, it will tell you decryption was unsuccesful and it will ask you to erase all data.
