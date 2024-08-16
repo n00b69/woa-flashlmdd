@@ -33,55 +33,25 @@ fastboot boot path\to\massstorage.img
 diskpart
 ```
 
-#### Finding your phone
-> This will list all connected disks
->
-> Look for your phone (which should be the last disk which will be 117GB in size). If you do not see it, wait a few seconds and run the command again. Repeat this until you see the disk.
-```cmd
-lis dis
+#### Select the Windows volume of the phone
+> Use `list volume` to find it, replace `$` with the actual number of **WINFLASH**
+```diskpart
+select volume $
 ```
 
-#### Selecting your phone
-> Replace `$` with the actual number of your phone
-```cmd
-sel dis $
-```
-
-#### Listing your phone's partitions
-> This will list your device's partitions
-```cmd
-lis par
-```
-
-#### Selecting the Windows partition
-> Replace `$` with the partition number of Windows (should be 32)
-```cmd
-sel par $
-```
-
-#### Formatting Windows drive
-```cmd
-format quick fs=ntfs label="WINFLASH"
-```
-
-#### Add letter to Windows
-```cmd
+#### Assign the letter X
+```diskpart
 assign letter x
 ```
 
-#### Selecting the ESP partition
-> Replace `$` with the partition number of ESP (should be 31)
-```cmd
-sel par $
+#### Select the ESP volume of the phone
+> Use `list volume` to find it, replace `$` with the actual number of **ESPFLASH**
+```diskpart
+select volume $
 ```
 
-#### Formatting ESP drive
-```cmd
-format quick fs=fat32 label="ESPFLASH"
-```
-
-#### Add letter to ESP
-```cmd
+#### Assign the letter Y
+```diskpart
 assign letter y
 ```
 
