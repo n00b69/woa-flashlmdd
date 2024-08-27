@@ -5,7 +5,7 @@
 ## Reinstalling Windows
 
 ### Prerequisites
-- [Windows on ARM image](https://worproject.com/esd)
+- [Windows on ARM image](https://arkt-7.github.io/woawin/)
   
 - [Drivers](https://github.com/n00b69/woa-flashlmdd/releases/tag/Drivers)
 
