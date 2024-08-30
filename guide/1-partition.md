@@ -5,6 +5,8 @@
 ## Partitioning your device
 
 ### Prerequisites
+- Unlocked bootloader
+
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
 - [Qfil](https://github.com/n00b69/woa-flashlmdd/releases/tag/Qfil)
