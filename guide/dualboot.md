@@ -31,8 +31,13 @@
 - Run the new shortcut on your desktop (you can also pin it to your start menu / taskbar for ease of access)
 
 #### Booting to Windows
-- Press `QUICKBOOT TO WINDOWS` inside the app, or use the newly created toggle in your quick settings panel
-  
+- Press **QUICKBOOT TO WINDOWS** inside the app, or use the newly created toggle in your quick settings panel
+
+> [!Important]
+> If you ever update or change your Android ROM, make sure to create a new **boot.img** backup (after rooting your phone!) and place it inside the **C:\ folder** in Windows, overwriting the old file.
+>
+> You can use the **BACK UP BOOT IMAGE** feature in the WOA Helper app to do so.
+
 ## Finished!
 
 
