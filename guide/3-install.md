@@ -86,6 +86,7 @@ dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
 > If you get an "Registry hive needs transaction logs" error when doing so, please join the [Telegram chat](https://t.me/woahelperchat) and write `#hive` for instructions on how to solve this.
   
 #### Create the Windows bootloader files
+> If any error shows up, such as "Failure when initializing library system volume.", open `diskpart` again and assign any new letter to **ESPPOLARIS**, then replace the letter `Y` in the next commands with the letter that you just added.
 ```cmd
 bcdboot X:\Windows /s Y: /f UEFI
 ```
