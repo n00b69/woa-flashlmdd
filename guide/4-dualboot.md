@@ -17,6 +17,10 @@
 - Download the **UEFI image** and place it inside the folder named `UEFI` in your internal storage.
 - Close and repen the WOA Helper app and press the **QUICKBOOT TO WINDOWS** button.
 
+### Setup - Windows
+> [!Tip]
+> If this is your first time booting Windows and you wish to skip the Microsoft Account login, press the **I don't have internet** button in the WiFi page, then when prompted, press the **Continue with limited setup** button.
+
 #### Booting to Android
 - Run the new **Android** shortcut on your desktop (you can also pin it to your start menu / taskbar for ease of access)
 
