@@ -2,7 +2,7 @@
 
 # Running Windows on the LG V50
 
-## Dualbooting Android and Windows seamlessly
+## Dualboot guide
 
 ### Prerequisites
 - [UEFI image](https://github.com/n00b69/woa-flashlmdd/releases/tag/UEFI)
