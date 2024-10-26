@@ -5,20 +5,20 @@
 ## Installing Windows
 
 ### Prerequisites
+- [Mass storage image](https://github.com/n00b69/woa-mh2lm5g/releases/download/Files/massstorage.img)
+
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
   
 - [Drivers](https://github.com/n00b69/woa-flashlmdd/releases/tag/Drivers)
 
-- [Mass storage image](https://github.com/n00b69/woa-mh2lm5g/releases/download/Files/massstorage.img)
+- [UEFI image](https://github.com/n00b69/woa-flashlmdd/releases/tag/UEFI)
 
-- [Qfil](https://github.com/n00b69/woa-flashlmdd/releases/tag/Qfil)
-
-### Reboot to fastboot mode
+### Reboot into fastboot mode
 - With the device turned off, hold the **volume down** button, then plug the cable in.
 - If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
 - To install fastboot drivers, extract the contents of **QUD.zip** somewhere, right click on **Android**, click on **Update driver** and **Browse my computer for drivers**, then find and select the **QUD** folder.
 
-#### Boot to the mass storage mode image
+#### Boot into the mass storage mode image
 > Replace `path\to\massstorage.img` with the actual path of the image
 >
 > If popups show up telling you to format the disks, ignore or close them
@@ -126,22 +126,19 @@ set $ esp on
 quit
 ```
 
-### Reboot to EDL
-> If you didn't flash the engineering ABL on the previous page, you can skip this step and the next one and simply reboot your device
-- Open **Device Manager** on your PC
-- Hold **volume down** + **power**.
-- After the LG logo appears, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
-- Keep doing this until you hear a USB connection sound on your PC, or when **Qualcomm HS-USB QDLoader 9008** appears in the **Ports (COM & LPT)** category of Device Manager.
+### Rebooting into fastboot mode
+```cmd
+adb reboot bootloader
+```
 
-#### Flashing stock ABL
-> Or your IMEI won't work
-- In **Qfil**, select Tools > Partition manager, and click **Ok**.
-- Right click on **abl_a** > **Manage Partition Data** and press **Load Image**.
-- Select and flash the **abl_a** file in `C:\Users\YOURNAME\AppData\Roaming\Qualcomm\QFIL\COMPORT_#\`
-- Do the same thing for **abl_b**.
+### Boot into the UEFI
+> Replace `path\to\flashlmdd-uefi.img` with the actual path of the image
+```cmd
+fastboot boot path\to\flashlmdd-uefi.img
+```
 
-#### Reboot back to Android
-- Hold **volume down** + **power** until it shows the LG logo, then release the buttons.
+### Reboot into Android
+Your device should reboot by itself after +- 10 minutes of waiting, after which you will be booted into Android, for the last step.
 
 ## [Last step: Setting up dualboot](4-dualboot.md)
 
