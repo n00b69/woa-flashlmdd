@@ -89,8 +89,10 @@ cd path\to\platform-tools
 adb pull /dev/block/by-name/boot_a boot.img
 ```
 
-#### Unmount all partitions
-Go to mount in your recovery and unmount all partitions
+#### Unmount data
+```cmd
+adb shell umount /dev/block/by-name/userdata
+```
 
 ### Preparing for partitioning
 > Download the parted file and move it in the platform-tools folder, then run
@@ -115,25 +117,23 @@ rm $
 #### Recreating userdata
 > Replace **17.7GB** with the former start value of **userdata** which we just deleted
 >
-> Replace **60GB** with the end value you want **userdata** to have
+> Replace **64GB** with the end value you want **userdata** to have. In this example Android will have 64GB-17.7GB = **46.3GB** of usable storage space.
 ```cmd
-mkpart userdata ext4 17.7GB 60GB
+mkpart userdata ext4 17.7GB 64GB
 ```
 
 #### Creating ESP partition
-> Replace **60GB** with the end value of **userdata**
+> Replace **64GB** with the end value of **userdata**
 >
-> Replace **60.3GB** with the value you used before, adding **0.3GB** to it
+> Replace **64.3GB** with the value you used before, adding **0.3GB** to it
 ```cmd
-mkpart esp fat32 60GB 60.3GB
+mkpart esp fat32 64GB 64.3GB
 ```
 
 #### Creating Windows partition
-> Replace **60.3GB** with the end value of **esp**
->
-> Replace **126GB** with the end value of your disk, use `p free` to find it
+> Replace **64.3GB** with the end value of **esp**
 ```cmd
-mkpart win ntfs 60.3GB 126GB
+mkpart win ntfs 64.3GB 126GB
 ```
 
 #### Making ESP usable
@@ -147,24 +147,22 @@ set $ msftdata on
 quit
 ```
 
-### Formatting Windows drive
-> [!note]
-> If this command and the next one fails (for example: "Failed to access `/dev/block/by-name/win`: No such file or directory"), reboot your phone, then boot back into the recovery provided in the guide and try again
-```cmd
-adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINFLASH
-```
-
-### Formatting ESP drive
-```cmd
-adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPFLASH
-```
-
 ### Format all data
 - Go to the Wipe menu in your recovery and wipe all data. If this doesn't work, simply reboot your phone.
 
 ### Reboot your phone
 > Once it is booted, it will tell you decryption was unsuccesful and it will ask you to erase all data.
 - Press this button to erase all data, then set up your phone (make sure to also enable USB debugging in developer settings).
+
+### Formatting Windows and ESP drives
+> Reboot into TWRP, then run the below two commands
+```cmd
+adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINFLASH
+``` 
+
+```cmd
+adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPFLASH
+```
 
 ## [Next step: Rooting your phone](2-root.md)
 
