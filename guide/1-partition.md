@@ -154,15 +154,17 @@ quit
 > Once it is booted, it will tell you decryption was unsuccesful and it will ask you to erase all data.
 - Press this button to erase all data, then set up your phone (make sure to also enable USB debugging in developer settings).
 
-### Formatting Windows and ESP drives
-> Reboot into TWRP, then run the below two commands
+### Formatting win and esp partitions
+> After rebooting back into TWRP
 ```cmd
 adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINFLASH
-``` 
-
+```
 ```cmd
 adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPFLASH
 ```
+
+#### Reboot your phone
+> In preparation for the next step
 
 ## [Next step: Rooting your phone](2-root.md)
 
