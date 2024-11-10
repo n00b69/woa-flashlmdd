@@ -13,11 +13,9 @@
 
 - [QFILHelper](https://github.com/Beliathal/QFILHelper) Optional, for easier partition backups
 
-- [Parted script](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/parted)
-
-- [Engineering ABL](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/engabl_ab.bin) Only needed if you don't have fastboot
+- [Engineering ABL](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/engabl_ab.bin)
   
-- Any custom recovery
+- [Modded TWRP](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/modded-twrp-v50.img)
 
 ### Notes
 > [!WARNING]  
@@ -77,11 +75,20 @@ cd path\to\platform-tools
 - Select and flash the **engabl_ab.bin** file.
 - Do the same thing for **abl_b**.
 
-#### Reboot your phone
-> Hold **volume down** + **power** until it shows the LG logo, then release the buttons.
+#### Reboot to fastboot mode
+- Reboot your phone by holding **volume down** + **power** until it shows the LG logo, then release the buttons.
+- After it has booted, unplug the cable and power it off.
+- Once the device has turned off, hold the **volume down** button, then plug the cable back in.
+- If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
+- To install fastboot drivers, extract the contents of **QUD.zip** somewhere, right click on **Android**, click on **Update driver** and **Browse my computer for drivers**, then find and select the **QUD** folder.
 
-#### Boot into any custom recovery
-> Such as Lineage recovery, OFOX, or TWRP, which should be accessible by holding the **volume up** + **power** buttons, or with the Reboot to recovery button in Magisk
+#### Boot into the modded TWRP
+> Replace `path\to\modded-twrp-v50.img` with the actual path of the provided TWRP image
+>
+> After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
+```cmd
+fastboot boot path\to\modded-twrp-v50.img
+```
 
 ### Backing up your boot image
 > This will back up your current boot image in the current directory
@@ -95,9 +102,8 @@ adb shell umount /dev/block/by-name/userdata
 ```
 
 ### Preparing for partitioning
-> Download the parted file and move it in the platform-tools folder, then run
 ```cmd
-adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
+adb shell parted /dev/block/sda
 ```
 
 #### Printing the current partition table
