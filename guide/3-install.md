@@ -108,13 +108,22 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
-### Boot into any custom recovery
-> Reboot your phone by holding **volume down** + **power** until it shows the LG logo, then release the buttons. After this boot to any custom recovery again.
+#### Reboot to fastboot mode
+- Reboot your phone by holding **volume down** + **power** until it shows the LG logo, then release the buttons.
+- After it has booted, unplug the cable and power it off.
+- Once the device has turned off, hold the **volume down** button, then plug the cable back in.
 
-#### Push parted
-> Make sure your CMD is opened in platform-tools
+#### Boot into the modded TWRP
+> Replace `path\to\modded-twrp-v50.img` with the actual path of the provided TWRP image
+>
+> After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
 ```cmd
-adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
+fastboot boot path\to\modded-twrp-v50.img
+```
+
+### Running parted
+```cmd
+adb shell parted /dev/block/sda
 ```
 
 #### Making ESP bootable
