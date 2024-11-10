@@ -7,10 +7,11 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- Any custom recovery
+- [Modded TWRP](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/modded-twrp-v50.img)
 
-#### Boot into any custom recovery
-> Make sure it supports ADB commands
+### Reboot into fastboot mode
+> If you don't have access to fastboot, use the instructions in the [partitioning guide](1-partition.md) to flash the engineering ABL.
+- With the device turned off, hold the **volume down** button, then plug the cable in.
 
 ### Opening CMD as an admin
 > Download **platform-tools** and extract the folder somewhere, then open CMD as an **administrator**.
