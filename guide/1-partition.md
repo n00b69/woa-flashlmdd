@@ -45,12 +45,13 @@ cd path\to\platform-tools
 - In "Select programmer", select the downloaded firehose.
 - In "Configuration", make sure the "Device Type" is set to **UFS**.
 
-#### Boot to EDL
+#### Boot into EDL
 - Open **Device Manager** on your PC
 - With the phone turned off, hold **volume down** + **power**.
 - After the LG logo appears, while still holding **volume down** + **power**, start rapidly pressing the **volume up** button.
 - Keep doing this until you hear a USB connection sound on your PC, or when **Qualcomm HS-USB QDLoader 9008** appears in the **Ports (COM & LPT)** category of Device Manager.
-- If the device is called **QUSB_BULK_CID** or has a ⚠️ yellow warning triangle / question mark, and is located in any other category (for example **Other devices**), you need to install EDL drivers first.
+> [!Note]
+> If the device is called **QUSB_BULK_CID** or has a ⚠️ yellow warning triangle / question mark, and is located in any other category (for example **Other devices**), you need to install EDL drivers first.
 - To install EDL drivers, extract the contents of **QUD.zip** somewhere, right click on **QUSB_BULK_CID**, click on **Update driver** and **Browse my computer for drivers**, then find and select the **QUD** folder.
 
 #### Making sure Qfil works
@@ -75,11 +76,12 @@ cd path\to\platform-tools
 - Select and flash the **engabl_ab.bin** file.
 - Do the same thing for **abl_b**.
 
-#### Reboot to fastboot mode
+#### Reboot into fastboot mode
 - Reboot your phone by holding **volume down** + **power** until it shows the LG logo, then release the buttons.
 - After it has booted, unplug the cable and power it off.
 - Once the device has turned off, hold the **volume down** button, then plug the cable back in.
-- If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
+> [!Note]
+> If the phone in device manager is called **Android** and has a ⚠️ yellow warning triangle, you need to install fastboot drivers before you can continue.
 - To install fastboot drivers, extract the contents of **QUD.zip** somewhere, right click on **Android**, click on **Update driver** and **Browse my computer for drivers**, then find and select the **QUD** folder.
 
 #### Boot into the modded TWRP
