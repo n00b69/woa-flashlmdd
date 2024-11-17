@@ -108,7 +108,7 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
-#### Reboot to fastboot mode
+#### Reboot into fastboot mode
 - Reboot your phone by holding **volume down** + **power** until it shows the LG logo, then release the buttons.
 - After it has booted, unplug the cable and power it off.
 - Once the device has turned off, hold the **volume down** button, then plug the cable back in.
