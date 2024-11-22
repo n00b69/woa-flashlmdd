@@ -64,6 +64,8 @@ print
 
 #### Removing userdata
 > Replace **$** with the number of the **userdata** partition, which should be **30**
+>
+> If you have a **grow** partition, remove it as well
 ```cmd
 rm $
 ```
