@@ -5,7 +5,7 @@
 ## Installing Windows
 
 ### Prerequisites
-- [Mass storage image](https://github.com/n00b69/woa-mh2lm5g/releases/download/Files/massstorage.img)
+- [Mass storage image](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/massstorage.img)
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
   
