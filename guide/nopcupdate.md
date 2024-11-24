@@ -9,7 +9,7 @@
 
 - [LG V50 DriverUpdater (LOS20)](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/FlashlmddDriverUpdater.zip) or [LG V50 DriverUpdater (SD card)](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/FlashlmddDriverUpdaterSDCARD.zip) (If you are using an SD card)
 
-- [Modified TWRP](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/modded-twrp-g8x-installer.zip)
+- [Modified TWRP](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/modded-twrp-v50-installer.zip)
 
 - [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
 
