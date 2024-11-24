@@ -5,7 +5,7 @@
 ## Updating drivers without a PC
 
 ### Prerequisites
-- A rooted LG V50S with LineageOS 20 or an SD card
+- A rooted LG V50 with LineageOS 20 or an SD card
 
 - [LG V50 DriverUpdater (LOS20)](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/FlashlmddDriverUpdater.zip) or [LG V50 DriverUpdater (SD card)](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/FlashlmddDriverUpdaterSDCARD.zip) (If you are using an SD card)
 
