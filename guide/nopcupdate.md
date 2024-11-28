@@ -11,8 +11,6 @@
 
 - [Modified TWRP](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/modded-twrp-v50-installer.zip)
 
-- [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
-
 ### Notes
 > [!WARNING]  
 > 
