@@ -99,6 +99,7 @@ adb pull /dev/block/by-name/boot_a boot.img
 ```
 
 #### Unmount data
+> Ignore any possible errors and continue
 ```cmd
 adb shell umount /dev/block/by-name/userdata
 ```
