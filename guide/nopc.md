@@ -118,6 +118,8 @@ quit
 
 ### Preparing necessary files
 - Download the Windows image and make sure it remains in the `Download` folder of your **internal storage** (if you are using LineageOS 20), else, put it in the `Download` folder in your **SD card**.
+> [!Important]
+> For performance reasons, it is recommended to use Windows 11 24H2 (builds that start with 261XX, such as 26100.2454)
 - Download **WinInstaller.zip** and keep it in the `Download` folder as well.
 - Download and install the [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA), then open it and grant it root access. Do not do anything else inside the app yet.
 
