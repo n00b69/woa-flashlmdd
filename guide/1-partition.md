@@ -103,6 +103,12 @@ adb pull /dev/block/by-name/boot_a boot.img
 adb shell umount /dev/block/by-name/userdata
 ```
 
+### Fixing the GPT
+> If you do not do this, Windows may break your device
+```cmd
+adb shell fixgpt
+```
+
 ### Preparing for partitioning
 ```cmd
 adb shell parted /dev/block/sda
