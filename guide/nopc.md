@@ -49,6 +49,12 @@
 umount /dev/block/by-name/userdata
 ```
 
+### Fixing the GPT
+> If you do not do this, Windows may break your device
+```cmd
+fixgpt
+```
+
 #### Preparing for partitioning
 > [!Note]
 > If at any time **parted** asks you if you want to continue, or if you want to cancel something, type **yes** or **ignore**.
