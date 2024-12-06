@@ -23,13 +23,17 @@
 cd path\to\platform-tools
 ```
 
-### Formatting Windows and ESP partitions
+#### Boot into the modded TWRP
+> Replace `path\to\modded-twrp-v50.img` with the actual path of the provided TWRP image
+>
+> After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
 ```cmd
-adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINFLASH
+fastboot boot path\to\modded-twrp-v50.img
 ```
 
+### Formatting Windows and ESP partitions
 ```cmd
-adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPFLASH
+adb shell format
 ```
 
 ## [Next step: Reinstalling Windows](3-install.md)
