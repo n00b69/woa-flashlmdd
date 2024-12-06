@@ -80,12 +80,14 @@ fastboot boot path\to\modded-twrp-v50.img
 ```
 
 #### Unmount data
+> Ignore any possible errors and continue
+>
+> Replug the cable if it says "no devices/emulators found"
 ```cmd
 adb shell umount /dev/block/by-name/userdata
 ```
 
 ### Preparing for partitioning
-> Replug the cable if it says "no devices/emulators found"
 ```cmd
 adb shell parted /dev/block/sda
 ```
