@@ -116,7 +116,7 @@ adb shell parted /dev/block/sda
 ```
 
 #### Printing the current partition table
-> Parted will print the list of partitions, **userdata** should be the last partition in the list.
+> Parted will print the list of partitions, **userdata** or **grow** should be the last partition in the list
 ```cmd
 print
 ```
@@ -165,9 +165,9 @@ quit
 ### Format all data
 - Go to the Wipe menu in your recovery and wipe all data. If this doesn't work, simply reboot your phone.
 
-### Reboot your phone
-> Once it is booted, it will tell you decryption was unsuccesful and it will ask you to erase all data.
-- Press this button to erase all data, then set up your phone (make sure to also enable USB debugging in developer settings).
+#### Reboot your phone
+> Once it is booted, it might tell you decryption was unsuccesful and it will ask you to erase all data.
+- Press this button to erase all data, then set up your phone (make sure to also enable USB debugging in developer settings), then reboot back into TWRP.
 
 ### Formatting win and esp partitions
 > After rebooting back into TWRP
