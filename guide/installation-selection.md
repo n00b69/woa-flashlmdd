@@ -7,6 +7,7 @@ There are two methods to install Windows. Select the method you would like to us
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------
 | <a href="1-partition.md"><img src="https://github.com/n00b69/woa-flashlmdd/blob/main/guide/zmanual.png" width="80"></a> | <a href="nopc.md"><img src="https://github.com/n00b69/woa-flashlmdd/blob/main/guide/znopc.png" width="80"></a>
 | - Complicated for inexperienced users | - Simple and quick
+| - You learn basic ADB commands and how to use Qfil and more | - You don't learn anything
 | - Highly customizable in regards to OS version, language, edition, storage allocation | - Highly customizable in regards to OS version, language, edition, storage allocation
 | - A PC is required | - No PC is required
 | - Can be installed on any ROM and does not require an SD card | - Requires Lineage 20 or an SD card
