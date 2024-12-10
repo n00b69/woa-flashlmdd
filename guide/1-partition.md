@@ -93,7 +93,9 @@ fastboot boot path\to\modded-twrp-v50.img
 ```
 
 ### Backing up your boot image
-> This will back up your current boot image in the current directory
+> This will back up your boot image in the current directory (which should be the **platform-tools** folder)
+>
+> Replug the cable if it says "no devices/emulators found"
 ```cmd
 adb pull /dev/block/by-name/boot_a boot.img
 ```
