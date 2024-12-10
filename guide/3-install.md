@@ -5,7 +5,7 @@
 ## Installing Windows
 
 ### Prerequisites
-- [Mass storage image](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/massstorage.img)
+- [Modded TWRP](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/modded-twrp-v50.img)
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
   
@@ -16,13 +16,19 @@
 ### Reboot into fastboot mode
 - With the device turned off, hold the **volume down** button, then plug the cable in.
 
-#### Boot into the mass storage mode image
-> Replace `path\to\massstorage.img` with the actual path of the image
->
-> If popups show up telling you to format the disks, ignore or close them
+### Boot modified TWRP recovery
+> Replace `path\to\modded-twrp-v50.img` with the actual path of the image
 ```cmd
-fastboot boot path\to\massstorage.img
+fastboot boot path\to\modded-twrp-v50.img
 ```
+
+#### Execute the msc script
+```cmd
+adb shell msc
+```
+
+> [!Note]
+> If you are facing issues (e.g your device does not enter mass storage mode), follow [the steps described in this guide](https://github.com/n00b69/woa-mh2lm5g/blob/main/guide/troubleshooting.md#mass-storage-mode-does-not-work) for alternative ways of entering mass storage mode.
 
 ### Diskpart
 > [!WARNING]
@@ -108,35 +114,6 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
-#### Reboot into fastboot mode
-- Reboot your phone by holding **volume down** + **power** until it shows the LG logo, then release the buttons.
-- After it has booted, unplug the cable and power it off.
-- Once the device has turned off, hold the **volume down** button, then plug the cable back in.
-
-#### Boot into the modded TWRP
-> Replace `path\to\modded-twrp-v50.img` with the actual path of the provided TWRP image
->
-> After booting into TWRP, leave the device on the main screen. You can press the power button to turn the display off, if you want
-```cmd
-fastboot boot path\to\modded-twrp-v50.img
-```
-
-### Running parted
-```cmd
-adb shell parted /dev/block/sda
-```
-
-#### Making ESP bootable
-> Use `print` to see all partitions. Replace "$" with your ESP partition number, which should be 31
-```cmd
-set $ esp on
-```
-
-#### Exit parted
-```cmd
-quit
-```
-
 ### Rebooting into fastboot mode
 ```cmd
 adb reboot bootloader
@@ -148,8 +125,18 @@ adb reboot bootloader
 fastboot boot path\to\flashlmdd-uefi.img
 ```
 
-### Reboot into Android
-Your device should reboot by itself after +- 10 minutes of waiting, after which you will be booted into Android, for the last step.
+> After around 15 minutes your screen will go black. When it does, force reboot your device using **volume down** + **power**, then boot back into fastboot mode and boot the UEFI image one more time and wait until you see the language selection screen in Windows.
+
+> You may notice that everything feels very slow. This is normal and will be fixed in the next step.
+
+### Enabling GPU
+> Currently, GPU drivers are not installed when you first boot Windows. To fix this, we do the following
+- Open **Device Manager**, click on **Display Adapters**, then double click on **Microsoft Basic Display Adapter**.
+- Press `Update Driver` > `Browse my computer for drivers` > `Let me pick from a list of available drivers on my computer`, then select **Qualcomm(R) Adreno(TM) 640 GPU** and press `Next`.
+- Your screen should go black for a few seconds, after which you'll have succesfully installed the GPU drivers.
+
+#### Reboot back into Android
+- Run the **Android** shortcut on your desktop (you can also pin it to your start menu / taskbar for ease of access)
 
 ## [Last step: Setting up dualboot](4-dualboot.md)
 
