@@ -7,7 +7,7 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Mass storage image](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/massstorage.img)
+- [Modded TWRP](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/modded-twrp-v50.img)
 
 - [Drivers](https://github.com/n00b69/woa-flashlmdd/releases/tag/Drivers)
 
@@ -17,16 +17,22 @@
 > If you don't have access to fastboot, use the instructions in the [partitioning guide](1-partition.md) to flash the engineering ABL.
 - With the device turned off, hold the **volume down** button, then plug the cable in.
 
-#### Boot to the mass storage mode image
-> Replace `path\to\massstorage.img` with the actual path of the image
->
-> If popups show up telling you to format the disks, ignore or close them
+### Boot modified TWRP recovery
+> Replace `path\to\modded-twrp-v50.img` with the actual path of the image
 ```cmd
-fastboot boot path\to\massstorage.img
+fastboot boot path\to\modded-twrp-v50.img
+```
+
+#### Execute the msc script
+```cmd
+adb shell msc
 ```
 
 > [!Note]
-> After 1-2 minutes **WINFLASH** should automatically appear in Windows Explorer. If it does, skip to the "Installing drivers" step, else continue with the "Diskpart" steps.
+> **WINFLASH** should automatically appear in Windows Explorer. If it does, skip to the "Installing drivers" step, else continue with the "Diskpart" steps.
+
+> [!Note]
+> If you are facing issues (e.g your device does not enter mass storage mode), follow [the steps described in this guide](https://github.com/n00b69/woa-mh2lm5g/blob/main/guide/troubleshooting.md#mass-storage-mode-does-not-work) for alternative ways of entering mass storage mode.
 
 ### Diskpart
 ```cmd
