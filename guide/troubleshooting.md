@@ -5,6 +5,15 @@
 ## Troubleshooting Issues
 > Below you will find a list of common problems and their solutions
 
+## Mass storage mode does not work
+> This happens for some users, it is unknown why it happens, to bypass this, do the following:
+- Reboot back into the modified TWRP and run `adb shell parted /dev/block/sda`, then run `print`.
+- Run `set $ esp off` and `set $ msftdata on`, replacing **$** with the actual number of the esp partition (should be 31).
+- Boot into fastboot mode using `adb reboot bootloader`, then download [**LGG8XMassStorageBoot.img**](https://github.com/n00b69/woa-mh2lm/releases/download/Files/LGG8XMassStorageBoot.img) and boot into it using `fastboot boot path\to\LGG8XMassStorageBoot.img`.
+- After you finish the installation guide, before booting the Windows UEFI, return to TWRP, reopen **parted** and run `set $ esp on` and `set $ msftdata off`.
+
+##### Finished!
+
 ## Device is not recognized in fastboot or recovery
 > This likely means you don't have (proper) USB drivers installed
 - Download [QUD.zip](https://github.com/n00b69/woa-betalm/releases/download/Qfil/QUD.zip) here and extract it.
