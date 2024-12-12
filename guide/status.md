@@ -16,6 +16,7 @@ There are currently issues with restarting/shutting down the device while in Win
 - [x] Charging (Wireless)
 - [x] Display
 - [ ] DisplayPort ```will likely never work```
+- [ ] Flashlight
 - [x] GPU ```graphics in portrait may appear corrupted```
 - [ ] LTE/SMS
 - [x] Microphone
