@@ -15,12 +15,14 @@ There are currently issues with restarting/shutting down the device while in Win
 - [x] Charging (USB) ```VERY slow```
 - [x] Charging (Wireless)
 - [x] Display
-- [x] GPU
+- [ ] DisplayPort ```will likely never work```
+- [x] GPU ```graphics in portrait may appear corrupted```
 - [ ] LTE/SMS
-- [ ] SD Card
+- [x] Microphone
+- [ ] SD card
 - [x] Touchscreen
 - [x] UFS
-- [x] USB ```doesn't work after charging```
+- [x] USB
 - [x] WiFi
 
 #### Sensors
