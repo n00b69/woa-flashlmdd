@@ -97,7 +97,7 @@ fastboot boot path\to\modded-twrp-v50.img
 >
 > Replug the cable if it says "no devices/emulators found"
 ```cmd
-adb pull /dev/block/by-name/boot_a boot.img
+adb pull /dev/block/by-name/boot$(getprop ro.boot.slot_suffix) boot.img
 ```
 
 #### Unmount data
