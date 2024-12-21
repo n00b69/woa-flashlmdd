@@ -13,12 +13,14 @@ All the files here have been contributed by other users, here you will find a gu
 > [!Important]
 > This guide is for the LG V50. If you are looking to install Windows on the LG V50S, use [this guide](https://github.com/n00b69/woa-mh2lm5g) instead.
 
+
 ## Get started
 - [Project status](guide/status.md)
 
 - [Installation instructions](guide/installation-selection.md)
 
 - [Troubleshooting](guide/troubleshooting.md)
+
 
 ## Miscellaneous
 - [Dualboot setup](guide/dualboot.md)
@@ -31,13 +33,17 @@ All the files here have been contributed by other users, here you will find a gu
 
 - [Uninstall instructions](guide/uninstall.md)
 
-## Contributors
+
+## Maintainers
 [<img alt="Project Aloha" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/118143494?s=200&v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/Project-Aloha)
+[<img alt="AKAsaliza" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/33549290?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/AKAsaliza)
+
+
+## Contributors
 [<img alt="MollySophia" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/20746884?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/MollySophia)
 [<img alt="Renegade Project Discord Members" src="https://images.weserv.nl/?url=https://cdn.discordapp.com/icons/736563593058713690/68f67bfddf4390b11effc99917b16338.webp?size=256&w=45&fit=cover&mask=circle&maxage=7d" />](https://discord.gg/XXBWfag)
 [<img alt="gus33000" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/3755345?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/gus33000)
 [<img alt="map220v" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/14368485?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/map220v)
-[<img alt="AKAsaliza" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/33549290?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/AKAsaliza)
 [<img alt="ArturoGC06" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/76574534?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/ArturoGC06)
 [<img alt="n00b69" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/83274506?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/n00b69)
 
