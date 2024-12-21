@@ -121,7 +121,7 @@ quit
 > [!Important]
 > For performance reasons, it is recommended to use Windows 11 24H2 (builds that start with 261XX, such as 26100.2454)
 - Download **WinInstaller.zip** and keep it in the `Download` folder as well.
-- Download and install the [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA), then open it and grant it root access. Do not do anything else inside the app yet.
+- Download and install the [WOA Helper app](https://github.com/n00b69/woa-helper/releases/tag/APK), then open it and grant it root access. Do not do anything else inside the app yet.
 
 ### Booting into TWRP
 - Press the `Reboot to Recovery` button in the top right of Magisk again.
