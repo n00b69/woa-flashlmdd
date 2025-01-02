@@ -106,12 +106,6 @@ adb shell "dd if=/dev/block/platform/soc/1d84000.ufshc/by-name/boot$(getprop ro.
 adb shell umount /dev/block/by-name/userdata
 ```
 
-### Fixing the GPT
-> If you do not do this, Windows may break your device
-```cmd
-adb shell fixgpt
-```
-
 ### Preparing for partitioning
 ```cmd
 adb shell parted /dev/block/sda
@@ -178,6 +172,12 @@ adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINFLASH
 ```
 ```cmd
 adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPFLASH
+```
+
+### Fixing the GPT
+> If you do not do this, Windows may break your device
+```cmd
+adb shell fixgpt
 ```
 
 #### Reboot your phone
