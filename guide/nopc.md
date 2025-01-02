@@ -11,7 +11,7 @@
 
 - [Modified TWRP](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/modded-twrp-v50-installer.zip)
 
-- [LG av50 WinInstaller](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/FlashlmddWinInstaller.zip)
+- [LG V50 WinInstaller](https://github.com/n00b69/woa-flashlmdd/releases/download/Files/FlashlmddWinInstaller.zip)
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
 
