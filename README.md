@@ -29,7 +29,7 @@ All the files here have been contributed by other users, here you will find a gu
 
 - [Update drivers](guide/update-selection.md)
 
-- [Reinstall instructions](guide/reinstall.md)
+- [Reinstall instructions](guide/reinstall-selection.md)
 
 - [Uninstall instructions](guide/uninstall.md)
 
