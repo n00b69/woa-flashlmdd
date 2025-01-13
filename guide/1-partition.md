@@ -58,7 +58,7 @@ cd path\to\platform-tools
 - In **Qfil**, make sure the correct port is selected. If it says `No Port Available`, select the **Qualcomm HS-USB QDLoader 9008** port.
 - At the top, select "Tools" > "Partition manager", and click **Ok**.
 > [!Note]
-> If you see a **Download Fail:Sahara Fail** or **Download Fail:FireHose Fail:FHLoader Fail:Process Fail** error, make sure your cable stays connected and reboot to EDL again by holding **volume down** + **power**.
+> If you see a **Download Fail:Sahara Fail** or **Download Fail:FireHose Fail:FHLoader Fail:Process Fail** error, make sure your cable stays connected and reboot to EDL again by holding **volume down** + **power**, then start rapidly pressing the **volume up** button once the LG logo appears.
 - Once you're back in EDL, try opening the Partition manager again.
 - If it still fails, try to repeat the last step a few times. You can also try rebooting your phone and PC.
 
