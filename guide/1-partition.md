@@ -169,10 +169,7 @@ quit
 ### Formatting win and esp partitions
 > After rebooting back into TWRP
 ```cmd
-adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINFLASH
-```
-```cmd
-adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPFLASH
+adb shell format
 ```
 
 ### Fixing the GPT
