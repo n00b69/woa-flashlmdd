@@ -21,7 +21,7 @@
 > [!WARNING]  
 > All your data will be erased! Back up now if needed.
 > 
-> DO NOT REBOOT YOUR PHONE if you think you made a mistake, ask for help in the [Telegram chat](https://t.me/woahelperchat).
+> DO NOT REBOOT YOUR PHONE if you think you made a mistake, ask for help in the [Telegram chat](https://t.me/lgedevices).
 
 > [!Important]
 > This guide assumes you have already unlocked your bootloader and are already rooted, if this is not the case, you'll still need a PC to do that.
