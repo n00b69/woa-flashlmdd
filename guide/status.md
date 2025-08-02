@@ -15,7 +15,8 @@ There are currently issues with restarting/shutting down the device while in Win
 - [x] Charging (USB) ```VERY slow```
 - [x] Charging (Wireless)
 - [x] Display
-- [ ] DisplayPort ```will likely never work```
+- [ ] DisplayPort
+- [ ] LG V50 Dual Screen
 - [ ] Flashlight
 - [x] GPU ```graphics in portrait may appear corrupted```
 - [ ] LTE/SMS
@@ -24,6 +25,7 @@ There are currently issues with restarting/shutting down the device while in Win
 - [x] Touchscreen
 - [x] UFS
 - [x] USB
+- [ ] Vibration
 - [x] WiFi
 
 #### Sensors
