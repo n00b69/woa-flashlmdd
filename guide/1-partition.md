@@ -64,7 +64,7 @@ cd path\to\platform-tools
 
 #### Backing up your partitions
 - In the Partition manager, right click on **abl_a** > **Manage Partition Data** and press **Read Data**.
-- Do the same thing for **fsg**, **fsc**, **modemst1**, **modemst2** and **modem_a**
+- Do the same thing for **ftm**, **fsg**, **fsc**, **modemst1** and **modemst2**.
 - If you want to be on the safe side, you can also use [QFILHelper](https://github.com/Beliathal/QFILHelper) to additionally back up every partition. In this guide we only back up the most critical partitions.
 
 > [!Important]
