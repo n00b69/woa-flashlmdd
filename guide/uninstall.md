@@ -3,7 +3,32 @@
 # Running Windows on the LG V50
 
 ## Uninstalling Windows
+> There are two methods to uninstall Windows; manually, or by restoring the stock rom. If you are using a custom rom and want to keep this rom, method 2 is recommended.
 
+## Method 1: Restoring the stock ROM
+
+### Prerequisites
+- [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
+
+- [Stock ROM (.kdz)](https://docs.google.com/spreadsheets/d/10G72--uM5viwszJt8eY0q5PUjC53yzS2jvncdiJPaEk)
+
+- [Patched LG Up](https://drive.google.com/file/d/1JkUfZ26-zajXLc-NDQFrOWCbwKDQvIZ/view?usp=sharing)
+
+### Entering Download Mode
+- While your device is turned off, hold the **volume up** button, then plug in a USB cable that is connected to your PC.
+
+> [!Note]
+> If Download Mode does not start, you may need to restore the original **abl** file with QFil, which you should have backed up when partitioning your device (located at `C:\Users\YOURNAME\AppData\Roaming\Qualcomm\QFIL\COMPORT_#\`
+
+### Flashing your stock ROM
+- Open **LG Up** while your device is booted into **Download Mode**.
+- Select the stock ROM .kdz & select the `Refurbish` option in **LG Up**, then start flashing.
+- Wait for the process to finish and your device should automatically reboot.
+
+## Finished!
+
+
+## Method 2: Uninstalling Windows manually 
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
